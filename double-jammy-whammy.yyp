@@ -9,7 +9,7 @@
     "children": [],
     "name": "Default",
   },
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "Folders": [],
   "IncludedFiles": [],
   "isEcma": false,
@@ -17,8 +17,22 @@
   "MetaData": {
     "IDEVersion": "2023.800.0.404",
   },
-  "resources": [],
-  "RoomOrderNodes": [],
+  "resources": [
+    {"id":{"name":"spr_eirin","path":"sprites/spr_eirin/spr_eirin.yy",},},
+    {"id":{"name":"obj_target_base","path":"objects/obj_target_base/obj_target_base.yy",},},
+    {"id":{"name":"obj_eirin","path":"objects/obj_eirin/obj_eirin.yy",},},
+    {"id":{"name":"spr_eirin_arrow","path":"sprites/spr_eirin_arrow/spr_eirin_arrow.yy",},},
+    {"id":{"name":"obj_target_bunny","path":"objects/obj_target_bunny/obj_target_bunny.yy",},},
+    {"id":{"name":"spr_target_normal","path":"sprites/spr_target_normal/spr_target_normal.yy",},},
+    {"id":{"name":"obj_target_normal","path":"objects/obj_target_normal/obj_target_normal.yy",},},
+    {"id":{"name":"obj_arrow","path":"objects/obj_arrow/obj_arrow.yy",},},
+    {"id":{"name":"spr_eirin_arm_bow","path":"sprites/spr_eirin_arm_bow/spr_eirin_arm_bow.yy",},},
+    {"id":{"name":"spr_eirin_arm_arrow","path":"sprites/spr_eirin_arm_arrow/spr_eirin_arm_arrow.yy",},},
+    {"id":{"name":"rm_shooty","path":"rooms/rm_shooty/rm_shooty.yy",},},
+  ],
+  "RoomOrderNodes": [
+    {"roomId":{"name":"rm_shooty","path":"rooms/rm_shooty/rm_shooty.yy",},},
+  ],
   "templateType": "game",
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

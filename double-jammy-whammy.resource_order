@@ -1,4 +1,16 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"spr_eirin","order":3,"path":"sprites/spr_eirin/spr_eirin.yy",},
+    {"name":"obj_target_base","order":9,"path":"objects/obj_target_base/obj_target_base.yy",},
+    {"name":"obj_eirin","order":2,"path":"objects/obj_eirin/obj_eirin.yy",},
+    {"name":"spr_eirin_arrow","order":4,"path":"sprites/spr_eirin_arrow/spr_eirin_arrow.yy",},
+    {"name":"obj_target_bunny","order":11,"path":"objects/obj_target_bunny/obj_target_bunny.yy",},
+    {"name":"spr_target_normal","order":8,"path":"sprites/spr_target_normal/spr_target_normal.yy",},
+    {"name":"obj_target_normal","order":10,"path":"objects/obj_target_normal/obj_target_normal.yy",},
+    {"name":"obj_arrow","order":7,"path":"objects/obj_arrow/obj_arrow.yy",},
+    {"name":"spr_eirin_arm_bow","order":5,"path":"sprites/spr_eirin_arm_bow/spr_eirin_arm_bow.yy",},
+    {"name":"spr_eirin_arm_arrow","order":6,"path":"sprites/spr_eirin_arm_arrow/spr_eirin_arm_arrow.yy",},
+    {"name":"rm_shooty","order":1,"path":"rooms/rm_shooty/rm_shooty.yy",},
+  ],
 }
