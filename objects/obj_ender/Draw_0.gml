@@ -1,0 +1,1 @@
+draw_sprite(spr_timeup, 0, 320, 180);

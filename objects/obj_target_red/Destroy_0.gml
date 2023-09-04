@@ -5,4 +5,5 @@ if (collided == true) {
 	with (_obj) {
 		sprite_index = spr_target_red;
 	}
+	audio_play_sound(snd_medal_pop, 1, false);
 }

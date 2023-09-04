@@ -5,6 +5,6 @@ if (countdown > 150) {
 } else if (countdown > 30) {
 	draw_sprite( spr_start_timer, 2, 320, 180);
 } else {
-	draw_sprite( spr_start_timer, 3, 290 + (15 * min(0, countdown - 20)), 180);
-	draw_sprite( spr_start_timer, 4, 350 + (15 * max(0, -countdown + 20)), 180);
+	draw_sprite( spr_start_timer, 3, 290 + (30 * min(0, countdown - 10)), 180);
+	draw_sprite( spr_start_timer, 4, 350 + (30 * max(0, -countdown + 10)), 180);
 }

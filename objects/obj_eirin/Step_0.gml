@@ -1,8 +1,8 @@
 if (global.allowed == true) {
 	if (timeline_started == false) { 
 		//add target timer
-		
-		
+		timeline_index = tl_targets;
+		timeline_running = true;
 		timeline_started = true;
 	}
 	
@@ -28,6 +28,10 @@ if (global.allowed == true) {
 			bow_charging = true;
 			move_speed = 0;
 		}
+		if (!audio_is_playing(snd_charge) && playing_charge == false) {
+			audio_play_sound(snd_charge, 1, false);
+			playing_charge = true;
+		}
 	}
 	if (mouse_check_button_released(mb_left)) {
 		//only act if allowed to shoot
@@ -52,7 +56,12 @@ if (global.allowed == true) {
 		bow_charging = false;
 		move_allowed = true;
 		shoot_allow = false;
-		shoot_allow_timer = 10;
+		if (shoot_allow_timer < 10) {
+			shoot_allow_timer = 10;
+		}
+		audio_stop_sound(snd_charge);
+		playing_charge = false;
+		audio_play_sound(snd_fire, 1, false);
 		
 	}
 	if (mouse_check_button_pressed(mb_right)) { 
@@ -67,7 +76,12 @@ if (global.allowed == true) {
 		mouse_clear(mb_left);
 		move_allowed = true;
 		shoot_allow = false;
-		shoot_allow_timer = 60;
+		if (shoot_allow_timer < 10) {
+			shoot_allow_timer = 60;
+		}
+		audio_stop_sound(snd_charge);
+		playing_charge = false;
+		audio_play_sound(snd_stock, 1, false);
 	}
 	
 	
@@ -113,12 +127,14 @@ if (global.allowed == true) {
 	}
 	
 	
-	if (keyboard_check(vk_space)) {
+//not doing this in the jam
+/*	if (keyboard_check(vk_space)) {
 		//jump
 		//hold to maintain jump speed
 		//treat as releasing space after hold limit reached
 	}
 	
 	//apply gravity, check for platforms
-	
+*/ 
+
 }

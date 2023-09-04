@@ -1,0 +1,6 @@
+///@description down wave blue
+
+var _obj = instance_create_layer(-60, -60, "Instances", obj_target_blue);
+with (_obj) {
+	path_start(pth_down, 2, path_action_stop, true);
+}

@@ -19,23 +19,31 @@ if (obj_eirin.shoot_allow == false) {
 draw_set_color(c_white);
 draw_set_font(fn_gui);
 draw_set_alpha(.75);
-draw_text(7, 7, "Targets: " + string(global.targets_hit) + " / " + string(global.targets) );
-draw_text(7, 24, "Stars hit: " + string(global.targets_hit_stars));
-draw_text(7, 41, "Bunnies hit: " + string(global.targets_hit_bunnies));
-draw_text(7, 58, "Medals collected:");
+//draw_text(7, 7, "Targets: " + string(global.targets_hit) + " / " + string(global.targets) );
+//draw_text(7, 24, "Stars hit: " + string(global.targets_hit_stars));
+//draw_text(7, 41, "Bunnies hit: " + string(global.targets_hit_bunnies));
+draw_text(7, 7, "Hourai Elixir Ingredients:");
 if (global.targets_hit_medals[0] == true) {
-	draw_sprite_ext(spr_target_red, 0, 25, 80, .25, .25, 0, c_white, .75);
+	draw_sprite_ext(spr_target_red, 0, 25, 30, .25, .25, 0, c_white, .75);
 }
 if (global.targets_hit_medals[1] == true) {
-	draw_sprite_ext(spr_target_yellow, 0, 50, 80, .25, .25, 0, c_white, .75);
+	draw_sprite_ext(spr_target_yellow, 0, 50, 30, .25, .25, 0, c_white, .75);
 }
 if (global.targets_hit_medals[2] == true) {
-	draw_sprite_ext(spr_target_green, 0, 75, 80, .25, .25, 0, c_white, .75);
+	draw_sprite_ext(spr_target_green, 0, 75, 30, .25, .25, 0, c_white, .75);
 }
 if (global.targets_hit_medals[3] == true) {
-	draw_sprite_ext(spr_target_blue, 0, 100, 80, .25, .25, 0, c_white, .75);
+	draw_sprite_ext(spr_target_blue, 0, 100, 30, .25, .25, 0, c_white, .75);
 }
 if (global.targets_hit_medals[4] == true) {
-	draw_sprite_ext(spr_target_purple, 0, 125, 80, .25, .25, 0, c_white, .75);
+	draw_sprite_ext(spr_target_purple, 0, 125, 30, .25, .25, 0, c_white, .75);
 }
 draw_set_alpha(1);
+
+draw_set_halign(fa_center);
+draw_set_color(c_fuchsia);
+draw_set_font(fn_time);
+draw_text(320, 5, floor(string( max(60 - max(obj_eirin.timeline_position / 60, 0), 0))));
+draw_set_font(fn_gui);
+draw_set_color(c_white);
+draw_set_halign(fa_left);

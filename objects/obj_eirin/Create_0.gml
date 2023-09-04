@@ -15,8 +15,9 @@ global.targets_hit = 0;
 global.targets_hit_stars = 0;
 global.targets_hit_bunnies = 0;
 global.targets_hit_medals = [false,false,false,false,false];
+//global.targets_hit_medals = [true,true,true,true,true];
 
 timeline_started = false;
-timeline_ended = false;
 
 flasher = 0;
+playing_charge = false;
