@@ -9,3 +9,14 @@ move_allowed = true;
 move_speed = 0;
 shoot_allow = true;
 shoot_allow_timer = 0;
+
+global.targets = 0;
+global.targets_hit = 0;
+global.targets_hit_stars = 0;
+global.targets_hit_bunnies = 0;
+global.targets_hit_medals = [false,false,false,false,false];
+
+timeline_started = false;
+timeline_ended = false;
+
+flasher = 0;

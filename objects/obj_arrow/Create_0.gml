@@ -1,1 +1,2 @@
-destroy_timer = 180;
+destroy_timer = 1200;
+collided = false;
